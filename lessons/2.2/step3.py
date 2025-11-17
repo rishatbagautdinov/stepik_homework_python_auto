@@ -11,7 +11,7 @@ try:
     
     num1 = browser.find_element(By.ID, 'num1')
     num1 = int(num1.text)
-    print('Type of num1: ', type(num1), ' Value of num2: ' , num1)
+    print('Type of num1: ', type(num1), ' Value of num1: ' , num1)
     num2 = browser.find_element(By.ID, 'num2')
     num2 = int(num2.text)
     print('Type of num2: ', type(num2), ' Value of num2: ' , num2)
