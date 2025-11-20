@@ -10,11 +10,13 @@ try:
     # Ваш код, который заполняет обязательные поля
     first_name = browser.find_element(By.XPATH, '//input[@class="form-control first"]')
     first_name.send_keys('Rishat')
-    last_name = browser.find_element(By.CSS_SELECTOR, "input.form-control.second[placeholder='Input your last name']")
-    last_name.send_keys('Bagautdinov')
+    """last_name = browser.find_element(By.CSS_SELECTOR, "input.form-control.second[placeholder='Input your last name']")
+    last_name.send_keys('Bagautdinov')"""
     email = browser.find_element(By.XPATH, '//input[@class="form-control third"]')
     email.send_keys('Rishat12@gmail.com')
-
+    phone = browser.find_element(By.XPATH, '//input[@placeholder="Input your phone"]')
+    phone.send_keys('88005553535')
+    address = browser.find_element(By.XPATH, '//input[@placeholder="Input your address"]')
     # Отправляем заполненную форму
     button = browser.find_element(By.CSS_SELECTOR, "button.btn")
     button.click()
